@@ -65,6 +65,7 @@ fig.update_layout(
 
 
 app = Dash(__name__)
+server = app.server
 
 app.layout = dmc.MantineProvider(
     theme={
@@ -241,4 +242,5 @@ app.layout = dmc.MantineProvider(
 )
 
 if __name__ == '__main__':
+
     app.run(debug=True)
